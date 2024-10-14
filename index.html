@@ -1,30 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>個人網站</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 我們稍後會在這裡添加樣式 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        #fade-content {
-            width: 200px;
-            height: 100px;
-            background-color: lightblue;
-            display: none;
-            text-align: center;
-            padding-top: 40px;
-        }
-    </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Page</h1>
-    <button id="fade-button">淡入/淡出</button>
-    <div id="fade-content">這是一段會淡入淡出的內容</div>
+    <!-- 導覽欄 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#contact">聯絡我</a></li>
+        </ul>
+    </nav>
 
-    <script>
-        $("#fade-button").click(function() {
-            $("#fade-content").fadeToggle();
-        });
-    </script>
+    <!-- 首頁部分 -->
+    <section id="home">
+        <h1>你好，我是 Penny</h1>
+        <p>這是我的個人網站模板。</p>
+        <img src="your-photo.jpg" alt="我的照片" class="profile-photo">
+    </section>
+
+    <!-- 作品集部分 -->
+    <section id="portfolio">
+        <h2>我的作品集</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="項目 1">
+            <h3>項目 1 標題</h3>
+            <p>這是關於項目 1 的簡介。</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="項目 2">
+            <h3>項目 2 標題</h3>
+            <p>這是關於項目 2 的簡介。</p>
+        </div>
+    </section>
+
+    <!-- 聯絡部分 -->
+    <section id="contact">
+        <h2>聯絡我</h2>
+        <p>Email: your-email@example.com</p>
+    </section>
+
+    <script src="script.js"></script> <!-- 稍後會加入 jQuery 動畫效果 -->
 </body>
 </html>
