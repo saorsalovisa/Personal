@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #fade-content {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            display: none;
+            text-align: center;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Personal Page</h1>
+    <button id="fade-button">淡入/淡出</button>
+    <div id="fade-content">這是一段會淡入淡出的內容</div>
+
+    <script>
+        $("#fade-button").click(function() {
+            $("#fade-content").fadeToggle();
+        });
+    </script>
+</body>
+</html>
